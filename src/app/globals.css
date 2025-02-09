@@ -25,3 +25,7 @@ body {
   background-color: var(--buttoncolor);
   color: white;
 }
+
+.btn-search {
+  background-color: #1e272d;
+}

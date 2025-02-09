@@ -1,4 +1,7 @@
+import SignIn from "@/components/signIn/SignIn";
 import Image from "next/image";
+import { IoIosSearch } from "react-icons/io";
+import { IoAdd } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -17,36 +20,31 @@ export default function Home() {
           </div>
 
           <div className="">
-            <button className="btn px-10 py-1 rounded-md">Sign in</button>
+            <SignIn />
           </div>
         </div>
         <h1 className=" text-center px-20 text-3xl">Convosync Community</h1>
       </header>
       <main className="max-w-[1200px] mx-auto">
         <div
-          className="flex gap-5 mt-5
+          className="flex gap-5 mt-16
         "
         >
           <button className="btn px-3 py-2 flex items-center gap-5 rounded-md">
-            <svg
-              viewBox="64 64 896 896"
-              focusable="false"
-              data-icon="plus"
-              width="1em"
-              height="1em"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"></path>
-              <path d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"></path>
-            </svg>
+            <IoAdd />
             <span>Create a new group</span>
           </button>
-          <input
-            className="bg-[#1E272D] rounded-md px-5 flex-1 "
-            placeholder="search room, people or tags eg, public, private friends, room name, username,"
-            type="text"
-          />
+          <div className="flex-1 flex">
+            <input
+              className="bg-[#1E272D] rounded-l-md px-5 flex-1 outline-none border border-blue-500 "
+              placeholder="search room, people or tags eg, public, private friends, room name, username"
+              type="text"
+            />
+            <button className=" rounded-r-md btn-search px-2 border border-blue-500 flex items-center gap-2">
+              <IoIosSearch />
+              <span>Search</span>
+            </button>
+          </div>
         </div>
       </main>
     </section>
