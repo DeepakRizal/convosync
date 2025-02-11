@@ -2,7 +2,7 @@ import Image from "next/image";
 import { IoIosSearch } from "react-icons/io";
 import { IoAdd } from "react-icons/io5";
 
-import SignIn from "@/components/signIn/SignIn";
+import Profile from "@/components/profile/Profile";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
           </div>
 
           <div>
-            <SignIn />
+            <Profile />
           </div>
         </div>
         <h1 className=" text-center px-20 text-3xl">Convosync Community</h1>
