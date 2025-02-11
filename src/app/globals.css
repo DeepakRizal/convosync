@@ -6,6 +6,7 @@
   --background: #ffffff;
   --foreground: #121b22;
   --buttoncolor: #1890ff;
+  --buttonsearchbackground: #1e272d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,5 +28,5 @@ body {
 }
 
 .btn-search {
-  background-color: #1e272d;
+  background-color: var(--buttonsearchbackground);
 }
