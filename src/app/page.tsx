@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { IoIosSearch } from "react-icons/io";
-import { IoAdd } from "react-icons/io5";
 
 import Profile from "@/components/profile/Profile";
+import CreateRoomWrapper from "@/components/room/createRoomWrapper/CreateRoomWrapper";
 
 export default function Home() {
   return (
@@ -31,10 +31,7 @@ export default function Home() {
           className="flex gap-5 mt-16
         "
         >
-          <button className="btn px-3 py-2 flex items-center gap-5 rounded-md">
-            <IoAdd />
-            <span>Create a new group</span>
-          </button>
+          <CreateRoomWrapper />
           <div className="flex-1 flex">
             <input
               className="bg-[#1E272D] rounded-l-md px-5 flex-1 outline-none border border-blue-500 "
